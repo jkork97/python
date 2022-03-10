@@ -10,8 +10,7 @@ with open(file_path) as text_file:
         
 
 x1 = myStr.replace('.', ' ')
-x2 = x1.replace('  ', ' ')
-x3 = x2.replace('\n', ' ')
+x3 = x1.replace('\n', ' ')
 x4 = re.sub(' +', ' ', x3)
 
 answer = ''.join(filter(whitelist.__contains__, x4))
